@@ -1,0 +1,219 @@
+{
+    "primary_aim": {
+	"category": "",
+	"indicators": [
+	    "predictor",
+	    "disease marker"
+	],
+	"dtype": "categorical",
+	"refinements": {
+	    "prospective": {
+		"category": "",
+		"indicators": [
+		    "prospective",
+		    "retrospective"
+		],
+		"dtype": "categorical",
+		"refinements": {
+
+		}
+	    },
+	    "observational": {
+		"category": "",
+		"indicators": [
+		    "observational",
+		    "describe",
+		    "evaluate",
+		    "monitor",
+		    "administer"
+		],
+		"dtype": "categorical",
+		"refinements": {
+
+		}
+	    }
+	}
+    },
+    "intervention": {
+	"indicators": [
+	    "adherence",
+	    "protocol",
+	    "will be used",
+	    "will be cultured",
+	    "will be performed",
+	    "decision support"
+	],
+	"dtype": "binary",
+	"refinements": {
+	    "biosamples": {
+		"indicators": [
+		    "specimen",
+		    "specimen bank",
+		    "obtained from participants",
+		    "collection"
+		],
+		"dtype": "categorical",
+		"category": ""
+	    },
+	    "drugs": {
+		"indicators": [
+		    "administered"
+		],
+		"dtype": "categorical",
+		"category": "",
+		"dose": ""
+	    },
+	    "treatments": {
+		"indicators": [
+		    "transplantation",
+		    "surgical"
+		],
+		"dtype": "categorical",
+		"category": ""
+	    }
+	}
+    },
+    "study context": {
+	"indicators": [
+
+	],
+	"dtype": "categorical",
+	"category": [
+	    "part of larger study",
+	    "singular"
+	]
+    },
+    "burden": {
+	"indicators": [
+	    "(?:\\d+-)*\\d+ minutes",
+	    "(?:\\d+-)*\\d+ hours",
+	    "(?:\\d+-)*\\d+ days",
+      "(?:\\d+-)*\\d+ weeks",
+      "(?:\\d+-)*\\d+ months",
+	    "(?:\\d+-)*\\d+ years",
+	    "(?:\\d+-)*\\d+ extension"
+	],
+	"dtype": "",
+	"refinements": {
+	    "active period": {
+		"indicators": [
+		    "receive",
+		    "undergo",
+		    "treatment is given for",
+		    "extension",
+		    "continuing within",
+		    "beginning within",
+		    "continuing until",
+		    "tube insertions"
+		],
+		"dtype": "timedelta",
+		"refinements": {
+		    "extension": {
+			"indicators": [
+			    "continue on",
+			    "another \\d+ months"
+			],
+			"dtype": "timedelta"
+		    },
+		    "administration": {
+			"indicators": [
+			    "orally",
+			    "IV",
+			    "subcutaneously"
+			],
+			"dtype": "catgeorical",
+			"category": ""
+		    }
+		}
+	    },
+	    "follow up": {
+		"indicators": [
+		    "postransplantation",
+		    "then annually",
+		    "after completion"
+		],
+		"dtype": "categorical",
+		"category": [
+		    "part of larger study",
+		    "singular"
+		]
+	    }
+	}
+    },
+    "study design": {
+	"indicators": [
+
+	],
+	"dtype": "catgeorical",
+	"category": [
+	    "randomized",
+	    "stratified"
+	]
+    },
+    "cohorts": {
+	"indicators": [
+	    "numerical",
+	    "treatment arms",
+	    "arms? (?:\\d+-)*\\d+",
+	    "arms? (?:\\d+-)*\\d+",
+	    "treatment groups"
+	],
+	"dtype": "numerical"
+    },
+    "size of study": {
+	"indicators": [
+	    "\\d+ patients",
+	    "projected accrual",
+	    "total of \\d+ patients",
+	    "subjects"
+	],
+	"dtype": "numerical"
+    },
+    "pilot": {
+	"indicators": [
+
+	],
+	"dtype": "binary"
+    },
+    "eligibility": {
+	"indicators": [
+
+	],
+	"dtype": "tags",
+	"category": "",
+	"refinements": {
+	    "demographic": {
+		"indicators": [
+		    "all",
+		    "Chinese",
+		    "Vietnamese"
+		],
+		"dtype": "tags",
+		"tags": ""
+	    },
+	    "individual\/group": {
+		"indicators": [
+
+		],
+		"dtype": "categorical",
+		"category": [
+		    "family",
+		    "individual",
+		    "couples",
+		    "parent-child"
+		]
+	    }
+	}
+    },
+    "medium": {
+	"indicators": [
+	    "conducted over"
+	],
+	"dtype": "categorical",
+	"category": [
+	    "in person",
+	    "telephone",
+	    "internet"
+	]
+    }
+}
